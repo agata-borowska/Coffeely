@@ -76,6 +76,7 @@ body {
 }
 .grid--3-cols {
   grid-template-columns: repeat(3, 1fr);
+
   column-gap: 2.4rem;
 }
 .heading-primary,

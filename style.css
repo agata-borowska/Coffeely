@@ -60,11 +60,12 @@
 .shop-icon {
   width: 2.2rem;
   height: 2.2rem;
-  display: inline-block;
+  display: block;
   color: #dad4d0;
   background-color: #574532;
   border-radius: 50%;
   padding: 0.6rem;
+  border: solid 0.1rem #9fa399;
 }
 .shop-icon:hover,
 .shop-icon:active {
@@ -139,7 +140,7 @@
   font-size: 1.8rem;
 }
 /*********************/
-/* SECTION-products */
+/* SECTION-PRODUCT */
 /*********************/
 .section-product {
   padding: 6.8rem 0;
@@ -221,4 +222,72 @@
 .btn.product-btn:hover,
 .btn.product-btn:active {
   box-shadow: 0 0.5rem 1rem rgb(111, 134, 110);
+}
+/*********************/
+/* SECTION-REVIEWS */
+/*********************/
+.section-review {
+  background-color: #f2f4e9fb;
+  padding: 6.8rem 0;
+}
+.review-text {
+  padding: 2rem 2rem;
+  padding-top: 8rem;
+  color: rgb(56, 86, 54);
+}
+.spacing h2 {
+  margin-bottom: 16rem;
+}
+.review-card {
+  background-color: #e3e4defb;
+  border-radius: 2rem;
+  border: solid 2px rgb(56, 86, 54);
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 0.001rem 3rem rgb(194, 193, 193);
+}
+
+.review-card::before {
+  content: "";
+  position: absolute;
+  border: 20px solid transparent;
+  border-top-color: #e3e4defb;
+  border-bottom: 0;
+  bottom: -20px;
+  left: 50%;
+  margin-left: -20px;
+  z-index: 3;
+}
+.review-card::after {
+  content: "";
+  position: absolute;
+  border: 23px solid transparent;
+  border-top-color: rgb(56, 86, 54);
+  border-bottom: 0;
+  bottom: -23px;
+  left: 50%;
+  margin-left: -23px;
+  z-index: 2;
+}
+.review-img {
+  width: 50%;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: -10%;
+  left: 50%;
+  z-index: 3;
+  border: solid 2px rgb(56, 86, 54);
+  box-shadow: 0 0.008rem 3rem rgb(152, 152, 152);
+}
+.review-name {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+.review-description {
+  font-size: 1.8rem;
+  color: #52564d;
+  font-style: italic;
+  line-height: 1.6;
 }
