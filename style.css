@@ -240,8 +240,7 @@
 }
 .review-card {
   background-color: #e3e4defb;
-  border-radius: 2rem;
-  border: solid 2px rgb(56, 86, 54);
+  border: solid 0.2rem rgb(56, 86, 54);
   position: relative;
   z-index: 1;
   box-shadow: 0 0.001rem 3rem rgb(194, 193, 193);
@@ -250,24 +249,29 @@
 .review-card::before {
   content: "";
   position: absolute;
-  border: 20px solid transparent;
+  border: 2rem solid transparent;
   border-top-color: #e3e4defb;
   border-bottom: 0;
-  bottom: -20px;
+  bottom: -2rem;
   left: 50%;
-  margin-left: -20px;
+  margin-left: -2rem;
   z-index: 3;
 }
 .review-card::after {
   content: "";
   position: absolute;
-  border: 23px solid transparent;
+  border: 2.2rem solid transparent;
   border-top-color: rgb(56, 86, 54);
   border-bottom: 0;
-  bottom: -23px;
+  bottom: -2.2rem;
   left: 50%;
-  margin-left: -23px;
+  margin-left: -2.2rem;
   z-index: 2;
+}
+.review-stars {
+  color: rgb(56, 86, 54);
+  margin-bottom: 2rem;
+  display: block;
 }
 .review-img {
   width: 50%;
@@ -283,7 +287,7 @@
 .review-name {
   font-size: 2rem;
   font-weight: 600;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 .review-description {
   font-size: 1.8rem;
