@@ -228,7 +228,9 @@
 /*********************/
 .section-review {
   background-color: #f2f4e9fb;
-  padding: 6.8rem 0;
+  padding: 8rem 0;
+  border-top: 5px double #23320f;
+  border-bottom: 5px double #23320f;
 }
 .review-text {
   padding: 2rem 2rem;
@@ -294,4 +296,19 @@
   color: #52564d;
   font-style: italic;
   line-height: 1.6;
+}
+/*********************/
+/* SECTION-CONTACT US */
+/*********************/
+.section-contact {
+  padding: 4.3rem 0;
+
+  background-image: linear-gradient(
+      to left bottom,
+      #ffffff00,
+      rgba(55, 79, 55, 0.439)
+    ),
+    url(./img/contact.jpg);
+  background-size: cover;
+  height: 100vh;
 }
