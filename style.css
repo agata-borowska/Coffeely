@@ -227,7 +227,7 @@
 /* SECTION-REVIEWS */
 /*********************/
 .section-review {
-  background-color: #f2f4e9fb;
+  background-color: #f7f8f3d5;
   padding: 8rem 0;
   border-top: 5px double #23320f;
   border-bottom: 5px double #23320f;
@@ -298,10 +298,10 @@
   line-height: 1.6;
 }
 /*********************/
-/* SECTION-CONTACT US */
+/* SECTION-CONTACT */
 /*********************/
 .section-contact {
-  padding: 4.3rem 0;
+  padding: 4.8rem 0;
 
   background-image: linear-gradient(
       to left bottom,
@@ -310,5 +310,68 @@
     ),
     url(./img/contact.jpg);
   background-size: cover;
-  height: 100vh;
+  height: 100%;
+}
+h2.contact-tittle {
+  color: #23320fc8;
+  margin-bottom: 5rem;
+}
+.contact-data {
+  font-size: 2.6rem;
+  margin-bottom: 1.6rem;
+  display: flex;
+  align-items: center;
+  color: #23320fc8;
+}
+.contact-p {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+}
+.contact-info div {
+  margin-bottom: 1.6rem;
+}
+.contact-form-tittle p {
+  font-size: 2.6rem;
+  color: #23320fc8;
+  margin-bottom: 1.6rem;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.contact-form input {
+  padding: 1rem;
+  width: 50rem;
+  font-size: 1.6rem;
+  font-family: inherit;
+  color: #23320fc8;
+  border-radius: 3px;
+  background-color: #e3e4defb;
+  box-shadow: 0 1px 2px #dad4d0;
+  border: none;
+}
+
+.contact-form *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.3rem #364d17;
+}
+input:-webkit-autofill input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-text-fill-color: #23320fc8 !important;
+  font-size: 1.6rem;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #e3e4defb inset !important;
+  font-size: 1.6rem;
+}
+#your-message {
+  padding-bottom: 10rem;
+}
+.contact-icon {
+  margin-right: 1.6rem;
 }
