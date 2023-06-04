@@ -369,7 +369,7 @@ input:-webkit-autofill:active {
   -webkit-box-shadow: 0 0 0 30px #e3e4defb inset !important;
   font-size: 1.6rem;
 }
-#your-message {
+input.your-name {
   padding-bottom: 10rem;
 }
 .contact-icon {
