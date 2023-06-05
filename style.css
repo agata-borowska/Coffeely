@@ -302,7 +302,7 @@
 /*********************/
 .section-contact {
   padding: 4.8rem 0;
-  border-bottom: 5px double #23320f;
+  border-bottom: 5px double rgb(56, 86, 54);
 
   background-image: linear-gradient(
       to left bottom,
@@ -313,16 +313,20 @@
   background-size: cover;
   height: 100%;
 }
+.grid-contact {
+  display: grid;
+  row-gap: 3.2rem;
+  column-gap: 2rem;
+  grid-template-columns: 1.5fr auto 2fr;
+}
 h2.contact-tittle {
   color: rgb(56, 86, 54);
   margin-bottom: 5rem;
 }
 .contact-data {
   font-size: 2.6rem;
-  margin-bottom: 1.6rem;
-  display: flex;
-  align-items: center;
-  color: #23320fc8;
+  margin-bottom: 2rem;
+  color: rgb(56, 86, 54);
 }
 .contact-p {
   font-size: 1.6rem;
@@ -404,5 +408,26 @@ input.your-name {
 }
 .contact-btn:hover,
 .contact-btn:active {
-  box-shadow: 0 0.5rem 1rem rgb(111, 134, 110);
+  box-shadow: 0 0.5rem 1.5rem rgba(111, 134, 110, 0.824);
+}
+/*********************/
+/*FOOTER */
+/*********************/
+
+.footer {
+  padding: 12rem 0;
+  background-color: rgb(56, 86, 54);
+}
+.footer-icon {
+  width: 2rem;
+  height: 2rem;
+}
+.media-col p {
+  color: #f1f5f1;
+  font-weight: 300;
+  font-size: 3rem;
+}
+.footer-icon {
+  color: #f1f5f1;
+  margin-right: 2rem;
 }

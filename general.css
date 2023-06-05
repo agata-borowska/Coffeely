@@ -127,3 +127,6 @@ body {
 .text-center {
   text-align: center;
 }
+p {
+  display: block;
+}
