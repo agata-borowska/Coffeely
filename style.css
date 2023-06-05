@@ -302,18 +302,19 @@
 /*********************/
 .section-contact {
   padding: 4.8rem 0;
+  border-bottom: 5px double #23320f;
 
   background-image: linear-gradient(
       to left bottom,
-      #ffffff00,
-      rgba(55, 79, 55, 0.439)
+      #f8fedc0a,
+      rgba(55, 79, 55, 0.276)
     ),
     url(./img/contact.jpg);
   background-size: cover;
   height: 100%;
 }
 h2.contact-tittle {
-  color: #23320fc8;
+  color: rgb(56, 86, 54);
   margin-bottom: 5rem;
 }
 .contact-data {
@@ -327,28 +328,38 @@ h2.contact-tittle {
   font-size: 1.6rem;
   line-height: 2.6rem;
 }
+.contact-info {
+  border-right: 2px solid rgb(56, 86, 54);
+}
 .contact-info div {
   margin-bottom: 1.6rem;
 }
-.contact-form-tittle p {
+.contact-form-tittle {
   font-size: 2.6rem;
-  color: #23320fc8;
+  color: rgb(56, 86, 54);
   margin-bottom: 1.6rem;
 }
 .contact-form {
   display: flex;
+
   flex-direction: column;
   gap: 2rem;
+  justify-content: space-between;
+}
+.contact-mail-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .contact-form input {
   padding: 1rem;
   width: 50rem;
   font-size: 1.6rem;
   font-family: inherit;
-  color: #23320fc8;
+  color: rgb(56, 86, 54);
   border-radius: 3px;
   background-color: #e3e4defb;
-  box-shadow: 0 1px 2px #dad4d0;
+  box-shadow: 0.04rem 0.04rem 2rem rgb(203, 201, 201);
   border: none;
 }
 
@@ -359,7 +370,7 @@ h2.contact-tittle {
 input:-webkit-autofill input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
-  -webkit-text-fill-color: #23320fc8 !important;
+  -webkit-text-fill-color: rgb(56, 86, 54) !important;
   font-size: 1.6rem;
 }
 input:-webkit-autofill,
@@ -370,8 +381,28 @@ input:-webkit-autofill:active {
   font-size: 1.6rem;
 }
 input.your-name {
-  padding-bottom: 10rem;
+  padding-bottom: 6rem;
 }
 .contact-icon {
   margin-right: 1.6rem;
+  color: rgb(56, 86, 54);
+}
+.contact-btn,
+.contact-btn:link,
+.contact-btn:visited {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  background-color: rgb(56, 86, 54);
+  color: #f1f5f1;
+  text-align: center;
+  transition: all 0.3s;
+  padding: 1.4rem 3rem;
+  border-radius: 2rem;
+  text-decoration: none;
+}
+.contact-btn:hover,
+.contact-btn:active {
+  box-shadow: 0 0.5rem 1rem rgb(111, 134, 110);
 }
