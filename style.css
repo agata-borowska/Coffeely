@@ -327,6 +327,9 @@ h2.contact-tittle {
   font-size: 2.6rem;
   margin-bottom: 2rem;
   color: rgb(56, 86, 54);
+  display: flex;
+  align-items: center;
+  gap: 2rem;
 }
 .contact-p {
   font-size: 1.6rem;
@@ -388,7 +391,6 @@ input.your-name {
   padding-bottom: 6rem;
 }
 .contact-icon {
-  margin-right: 1.6rem;
   color: rgb(56, 86, 54);
 }
 .contact-btn,
@@ -415,19 +417,58 @@ input.your-name {
 /*********************/
 
 .footer {
-  padding: 12rem 0;
+  padding: 6rem 0;
   background-color: rgb(56, 86, 54);
+}
+.grid-footer {
+  grid-template-columns: 1.3fr 2fr 2fr;
+  column-gap: 2.4rem;
+}
+.media-col {
+  display: flex;
+  flex-direction: column;
 }
 .footer-icon {
   width: 2rem;
   height: 2rem;
 }
-.media-col p {
+.footer-heading {
   color: #f1f5f1;
   font-weight: 300;
-  font-size: 3rem;
+  font-size: 2.6rem;
+  margin-bottom: 2.6rem;
 }
 .footer-icon {
   color: #f1f5f1;
   margin-right: 2rem;
+}
+.copyrights {
+  font-size: 1.6rem;
+  color: #f1f5f18d;
+  line-height: 1.6;
+  margin-top: auto;
+}
+.media-list {
+  display: flex;
+  gap: 1.6rem;
+}
+.footer-nav,
+.footer-articles {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  list-style: none;
+  line-height: 2rem;
+}
+.footer-link,
+.footer-link:link,
+.footer-link:visited {
+  color: #f1f5f18d;
+  text-decoration: none;
+  font-size: 1.6rem;
+  transition: all 0.3s;
+}
+.footer-link:hover,
+.footer-link:active {
+  color: #f1f5f150;
 }
